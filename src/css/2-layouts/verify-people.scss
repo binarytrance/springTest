@@ -1,0 +1,51 @@
+.verify-people {
+    &__card {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        @media (min-width: 1200px) {
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+        transform: translateY(-40px);
+        @media (min-width: 1200px) {
+            transform: translateY(-80px);
+        }
+        
+    }
+    &__img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
+        @media (min-width: 768px) {
+            width: 160px;
+            height: 160px;
+        }
+        @media (min-width: 1200px) {
+            width: 180px;
+            height: 180px;
+        }
+    }
+    &__main-heading {
+        margin-bottom: 40px;
+    }
+    &__caption {
+        margin-top: 15px;
+        @include fontx3(18);
+        @media (min-width: 768px) {
+            margin-top: 25px;
+            @include fontx3(26);
+        }
+        
+        @media (min-width: 1200px) {
+            @include fontx3(36);
+        }
+    }
+    &__list {
+        margin-bottom: 35px;
+        @media (min-width: 768px) {
+            margin-bottom: 50px;
+        }
+    }
+}

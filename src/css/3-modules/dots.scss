@@ -1,0 +1,47 @@
+.dotted-sm {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: #191c27;
+        background-image: radial-gradient(hsla(0,0%,100%,.05) 15%,transparent 0),radial-gradient(hsla(0,0%,100%,.05) 15%,transparent 0);
+        background-size: 25px 25px;
+    }
+}
+
+.dotted-lg {
+    position: absolute;
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        background-image: radial-gradient(hsla(0,0%,100%,.08) 15%,transparent 0),radial-gradient(hsla(0,0%,100%,.08) 15%,transparent 0);
+        background-size: 25px 25px;
+    }
+    &--top {
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 780px;
+        height: 360px;
+        overflow: hidden;
+    }
+    &--bottom {
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 385px;
+        height: 360px;
+        overflow: hidden;
+    }
+}

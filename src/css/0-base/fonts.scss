@@ -1,0 +1,65 @@
+// @import "base-styles";
+
+/*Different fonts*/
+
+/*-----------variables that store fonts-----------*/
+@font-face {
+    font-family: 'Avenir Next Regular';
+	src: url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+		url('../fonts/Avenir-Next-LT-Pro_5196.ttf') format('ttf');
+	font-weight: 400;
+  	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Pro Demi';
+	src: url('../fonts/AvenirNextLTPro-Demi.woff') format('woff'),
+		url('../fonts/Avenir-Next-LT-Pro-Demi_5188.ttf') format('ttf');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Pro Bold';
+	src: url('../fonts/AvenirNextLTPro-Bold.woff') format('woff'),
+		url('../fonts/Avenir-Next-LT-Pro-Bold_5182.ttf') format('ttf');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+.avenir-regular {
+	font-family: 'Avenir Next Regular', Helvetica, sans-serif;
+	font-weight: 400;
+}
+.avenir-bold {
+	font-family: 'Avenir Next Pro Bold', Helvetica, sans-serif;
+}
+.avenir-demi {
+	font-family: 'Avenir Next Pro Demi', Helvetica, sans-serif;
+}
+
+/*------------------Base font styles------------------*/
+
+@mixin fontx5($font-size) {
+	font-size: $font-size + px;
+  	line-height: 1.5;
+}
+@mixin fontx3($font-size) {
+	font-size: $font-size + px;
+  	line-height: 1.3;
+}
+
+.section-heading {
+	@include fontx5(20);
+	@media (min-width: 768px) {
+		@include fontx5(26);
+	}
+	@media (min-width: 1200px) {
+		@include fontx5(36);
+	}
+	
+}
+
+
+
+/*------------------END: Base font styles------------------*/

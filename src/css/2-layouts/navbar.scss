@@ -1,0 +1,24 @@
+.nav-header {
+    background: var(--dark-two);
+    
+}
+.partner-logo-wrapper {
+    img {
+        width: 90px;
+        order: 2;
+    }
+    figcaption {
+        order: 1;
+        @include fontx5(12);
+        margin-bottom: 5px;
+    }
+}
+.navbar-contents {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: solid 1px grey;
+    @media (min-width: 1200px) {
+        padding-top: 55px;
+        padding-bottom: 55px; 
+    }
+}

@@ -1,0 +1,88 @@
+.how-to-verify {
+    background: var(--french-blue);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    @media (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    &__iriscard {
+        padding: 25px;
+        margin-bottom: 40px;
+        @media (min-width: 1200px) {
+            padding: 40px 50px 50px 50px;
+            margin-bottom: 70px;
+        }
+    }
+    &__main-heading {
+        margin-bottom: 25px;
+    }
+    &__subheading {
+        @include fontx5(18);
+        margin-bottom: 50px;
+    }
+    .how-list-digit {
+        border: solid 1px #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-bottom: 35px;
+        @include fontx5(24);
+        &__black {
+            border: solid 1px $black;
+        }
+    }
+    .how-list-subtext {
+        @include fontx5(24);
+        margin-bottom: 35px;
+    }
+    &__irisheading {
+        margin-bottom: 30px;
+    }
+    &__court-list {
+        width: 100%;
+        margin-bottom: 40px;
+        @media (min-width: 1200px) {
+            width: 80%;
+        }
+        figure {
+            padding: 10px 22px;
+            background: var(--french-blue);
+            border-radius: 27px;
+            @include fontx5(18)
+        }
+        li {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        figcaption {
+            @include fontx5(12);
+            @media (min-width: 1200px) {
+                @include fontx5(18);
+            }
+        }
+    }
+    &__sep-card {
+        color: var(--black);
+        padding: 40px 25px;
+        @media (min-width: 1200px) {
+            padding: 70px 50px;
+        }
+    }
+    &__illustration {
+        margin-bottom: 30px;
+    }
+    &__french-card {
+        padding: 40px 30px;
+        margin-bottom: 40px;
+        margin-bottom: 40px;
+        @media (min-width: 1200px) {
+            padding-right: 200px;
+            @include fontx5(24);
+            margin: 70px 0;
+        }
+    }
+}

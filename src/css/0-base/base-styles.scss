@@ -1,0 +1,109 @@
+/*----------- Apply box sizing to border box -----------*/
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	overflow-x: hidden;		
+	height: 100%;
+}
+body * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Avenir-Next-LT-Pro_5196', Helvetica, sans-serif;;
+}
+
+*{
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+ol, ul li {
+	list-style: none;
+}
+// header {
+// 	position: absolute;
+// 	width: 100%;
+// 	z-index: 9999;
+// 	top: 0;
+// 	left: 0;
+// }
+
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+.whitey {
+	color: #fff;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+.text-capitalize {
+	text-transform: capitalize;
+}
+.text-center {
+	text-align: center;
+}
+/*============================ clearfix ========================================*/
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.image-container {
+	object-fit: contain;
+}
+/*======= use as a parent to center inline/inline-block elements ======== */
+.container-shadow {
+	box-shadow: 0px 1px 10px 1px rgba(183, 183, 183, 0.2);
+	background: #fff;
+}
+
+.inner-container {
+	padding-top: 20px;
+	position: relative;
+}
+.image {
+	width: 100%;
+	max-width: 100%;
+	height: 100% !important;
+}
+.no-list-style {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.btn-shadow {
+	box-shadow: 2px 7px 7px 0px rgba(222, 242, 146, 0.25)
+}
+
+img[src*=" "] {
+		display: none;
+}

@@ -1,0 +1,22 @@
+doctype html
+
+html(lang= "en")
+	- var pageName = "home"
+	head
+		include pug/base/head.pug
+		+header(pageName)
+	body.avenir-regular
+		//- include pug/components/loader.pug
+		//- include pug/base/logo-only-top-nav.pug
+
+		main.padding-main
+			//- START: Nav Bar =====================================================================
+			include pug/base/header.pug
+			//- END: Nav Bar =======================================================================
+			include pug/layouts/home-banner.pug
+			include pug/layouts/verify-people.pug
+			include pug/layouts/how-to-verify.pug
+			include pug/base/footer.pug
+
+		include pug/base/scripts.pug
+

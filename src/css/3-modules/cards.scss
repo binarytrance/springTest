@@ -1,0 +1,33 @@
+.card {
+    border-radius: 16px;
+    &--white {
+        background: #fff;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    }
+    &--dark-card {
+        background: var(--dark);
+        padding: 30px 30px 30px 30px;
+        @media (min-width: 768px) {
+            padding: 30px 135px 30px 30px;
+        }
+    }
+    &--iris {
+        background: var(--iris);
+    }
+    &--french {
+        background: var(--french-blue);
+    }
+}
+
+.stars {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        z-index: 1;
+        content: url("../img/stars.svg");
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}

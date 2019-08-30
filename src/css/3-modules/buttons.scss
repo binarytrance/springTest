@@ -1,0 +1,23 @@
+.btn {
+    border-radius: 35px;
+    padding: 15px 35px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease-in-out;
+    display: inline-block;
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+    &--blue {
+        background: var(--royal-blue);
+        color: #fff;
+    }
+    &--white {
+        background: #fff;
+        color: var(--french-blue)
+    }
+    &:hover {
+        box-shadow: 0px 3px 5px grey;
+    }
+}

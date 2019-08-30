@@ -1,0 +1,20 @@
+.home-banner {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    position: relative;
+    @media (min-width: 1200px) {
+        padding-top: 80px;
+        padding-bottom: 160px;
+    }
+    h2 {
+        margin-bottom: 25px;
+    }
+    p {
+        @include fontx3(20);
+        margin-bottom: 50px;
+    }
+    h1 {
+        position: relative;
+        z-index: 2;
+    }
+}
