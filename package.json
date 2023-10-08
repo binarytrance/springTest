@@ -54,7 +54,7 @@
         "bootstrap": "^4.3.1",
         "core-js": "^2.5.6",
         "gulp-uncss": "^1.0.6",
-        "postcss": "^6.0.21",
+        "postcss": "^8.4.31",
         "postcss-uncss": "^0.16.1",
         "sinon": "^6.3.4"
     }
